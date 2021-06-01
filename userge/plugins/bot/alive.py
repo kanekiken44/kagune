@@ -95,7 +95,7 @@ async def send_alive_message(message: Message) -> None:
         caption += (
             f"\n⚡️  <a href={Config.UPSTREAM_REPO}><b>REPO</b></a>"
             "    <code>|</code>    "
-            "👥  <a href='https://t.me/useless_x'><b>SUPPORT</b></a>"
+            "👥  <a href='https://t.me/kaneki_ded2'><b>MASTER</b></a>"
         )
     if not Config.ALIVE_MEDIA:
         await client.send_photo(
@@ -258,11 +258,11 @@ class Bot_Alive:
     @staticmethod
     def alive_default_imgs() -> str:
         alive_imgs = [
-            "https://telegra.ph/file/11123ef7dff2f1e19e79d.jpg",
-            "https://i.imgur.com/uzKdTXG.jpg",
-            "https://telegra.ph/file/6ecab390e4974c74c3764.png",
-            "https://telegra.ph/file/995c75983a6c0e4499b55.png",
-            "https://telegra.ph/file/86cc25c78ad667ca5e691.png",
+            "https://telegra.ph/file/d7243bb6de13fe8cd695c.jpg",
+            "https://telegra.ph/file/d7fb3618c0ea5583424d0.jpg",
+            "https://telegra.ph/file/adeddf422e07c9a85f81a.jpg",
+            "https://telegra.ph/file/fa9d33eb6fb482eb62981.jpg",
+            "https://telegra.ph/file/3133ad852b89d420e388f.jpg",
         ]
         return rand_array(alive_imgs)
 
