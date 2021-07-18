@@ -37,4 +37,4 @@ async def pingme(message: Message):
         await message.edit("`Pong!`")
         end = datetime.now()
         m_s = (end - start).microseconds / 1000
-        await message.edit(KANEKI_PING, caption="**im alive**\n`{m_s} ms`")
+        await client.send_photo(KANEKI_PING, caption="**im alive**\n`{m_s} ms`")
