@@ -11,6 +11,7 @@ from datetime import datetime
 
 from userge import Message, userge
 
+KANEKI_PING = "https://telegra.ph/file/233026426e4c8b041c0bb.jpg"
 
 @userge.on_cmd(
     "ping",
@@ -36,4 +37,4 @@ async def pingme(message: Message):
         await message.edit("`Pong!`")
         end = datetime.now()
         m_s = (end - start).microseconds / 1000
-        await message.edit(f"**im alive**\n`{m_s} ms`")
+        await message.edit(KANEKI_PING, caption="**im alive**\n`{m_s} ms`")
